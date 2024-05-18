@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/receiverImg"
+        android:layout_width="55dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/man" />
+
+    <TextView
+        android:id="@+id/receiver_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="1"
+        android:background="@drawable/receiver_shape"
+        android:paddingLeft="10dp"
+        android:textColor="#F8F8F8"
+        android:textSize="20sp" />
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nameUser"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting">
+
+
+    <Button
+        android:id="@+id/donebutt"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:background="@drawable/round_button"
+        android:backgroundTint="@color/black"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusUser"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/nameUSer"
+        android:layout_width="299sp"
+        android:layout_height="55sp"
+        android:background="@drawable/round_border_text"
+        android:ems="10"
+        android:hint="Type a username here"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/statusUser"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_pro"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/statusUser"
+        android:layout_width="299sp"
+        android:layout_height="55sp"
+        android:background="@drawable/round_border_text"
+        android:ems="10"
+        android:hint="Type a status here"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/donebutt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameUSer"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <ImageView
+        android:id="@+id/set_pro"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.119"
+        app:srcCompat="@drawable/baseline_camera_alt_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

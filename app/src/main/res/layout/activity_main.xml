@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_columnWeight="1"
+    android:layout_marginStart="10dp"
+    android:background="@drawable/a2main"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="590dp"
+        android:background="@color/white"
+        android:gravity="right
+"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_bold"
+            android:paddingTop="20dp"
+            android:shadowColor="#141414"
+            android:text="Chattify"
+            android:textColor="#EF0606"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/logout_main"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logout" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_user_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="432dp"
+        android:layout_below="@+id/toolbar1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="129dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="2dp" />
+
+    <ImageView
+        android:id="@+id/settButtn"
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="278dp"
+        android:layout_marginTop="626dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="7dp"
+        app:srcCompat="@drawable/settooo" />
+
+    <ImageView
+        android:id="@+id/cambtn"
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="628dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="1dp"
+        app:srcCompat="@drawable/camo" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="630dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="-1dp"
+        app:srcCompat="@drawable/messo" />
+
+
+</RelativeLayout>
